@@ -1,0 +1,6 @@
+[DEFAULT]
+client_id=YOUR_CLIENT_ID
+client_secret=YOUR_CLIENT_SECRET
+username=YOUR_REDDIT_BOT_USERNAME
+password=YOUR_REDDIT_BOT_PASSWORD
+user_agent=YOUR_USER_AGENT (e.g. script:FreediumBot:v0.0.0 (by /u/SavageCore))

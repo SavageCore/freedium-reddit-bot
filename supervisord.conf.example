@@ -1,0 +1,15 @@
+[program:freedium_reddit_bot_comments]
+command=python comments.py
+directory=/home/user/freedium-reddit-bot
+autostart=true
+autorestart=true
+stderr_logfile=/var/log/freedium_reddit_bot_comments.err.log
+stdout_logfile=/var/log/freedium_reddit_bot_comments.out.log
+
+[program:freedium_reddit_bot_submissions]
+command=python submissions.py
+directory=/home/user/freedium-reddit-bot
+autostart=true
+autorestart=true
+stderr_logfile=/var/log/freedium_reddit_bot_submissions.err.log
+stdout_logfile=/var/log/freedium_reddit_bot_submissions.out.log
