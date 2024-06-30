@@ -1,3 +1,17 @@
+[supervisord]
+logfile=/var/log/supervisord/supervisord.log
+logfile_maxbytes=50MB
+logfile_backups=10
+loglevel=info
+pidfile=/var/run/supervisord.pid
+nodaemon=false
+minfds=1024
+minprocs=200
+directory=/tmp
+
+[include]
+files = /etc/supervisor/conf.d/*.conf
+
 [program:freedium_reddit_bot_comments]
 command=python comments.py
 directory=/home/user/freedium-reddit-bot
